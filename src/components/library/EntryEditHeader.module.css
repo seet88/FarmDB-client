@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+}
+
+.cancel{
+    background-color: indianred;
+}
+
+.save{
+    background-color: lightgreen;
+}
+
+.content{    
+    position: fixed;
+    top: 0;
+    width: 100%
+  }

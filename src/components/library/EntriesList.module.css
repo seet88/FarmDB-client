@@ -1,0 +1,17 @@
+.list{
+    list-style-type:none;
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.entry{
+    background-color: white;
+    width: 90%;
+}
+
+.entry:hover{
+    background-color: lightpink;
+}

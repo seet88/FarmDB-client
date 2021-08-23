@@ -1,0 +1,12 @@
+.menuIcon{
+    width: 15px;
+    height: 4px;
+    background-color: grey;
+    margin: 5px 0;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    
+}

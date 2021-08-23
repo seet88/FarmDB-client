@@ -1,0 +1,30 @@
+.entry{
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    border: 0.1rem solid gray
+}
+.entry:hover{
+    background-color: gray;
+}
+
+.secondLevel{    
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: large;
+}
+
+.description{
+    font-size: medium;
+}
+
+.status{
+    font-size: medium;
+}

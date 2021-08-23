@@ -1,0 +1,30 @@
+.list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    padding-left: 0;
+}
+
+.field{
+    background-color: rgb(104, 100, 100);
+    align-self: center;
+    width: 90%;
+    border: solid 0.1rem lightgray;
+    color: rgb(233, 227, 227);
+}
+
+.columnName{
+    color:lightsalmon
+}
+
+.firstRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkEntryName{
+    color: lightseagreen
+}
+
+

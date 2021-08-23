@@ -1,0 +1,20 @@
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;    
+    padding-left: 0
+}
+
+.item{
+    color: blue;
+    width: 8rem;
+    height: 8rem;
+    background-color: lightgray;
+    border: solid 1rem white;
+    
+}
+
+a{    
+    text-decoration: none;
+}

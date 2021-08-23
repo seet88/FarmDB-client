@@ -1,0 +1,15 @@
+.header{
+    background-color: grey;    
+    position: fixed;
+    top:0vh;
+    width: 100%;
+
+}
+
+.linking{
+    top:15vh;
+    left:3.3rem;
+    width: 72%;
+    text-align: center;
+
+}

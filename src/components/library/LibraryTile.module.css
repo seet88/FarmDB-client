@@ -1,0 +1,36 @@
+.tile{
+    
+    color: black;
+    width: 8rem;
+    height: 8rem;
+    background-color: lightgray;
+    border: solid 0.5rem white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name{
+    font-size: medium;
+    margin:0;
+}
+.entriesCount{
+    font-size: small;
+    margin:0;
+}
+.lastModification{
+    font-size: small;
+    margin:0;
+}
