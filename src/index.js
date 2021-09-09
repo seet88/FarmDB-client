@@ -11,7 +11,6 @@ const client = new ApolloClient({
   uri: "http://192.168.55.37:4000",
   cache: new InMemoryCache(),
 });
-// window.__APOLLO_CLIENT__ = true;
 
 ReactDOM.render(
   <React.StrictMode>

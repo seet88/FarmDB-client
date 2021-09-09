@@ -11,10 +11,6 @@ const CDropDownList = ({ field, mode, options }) => {
       checked: e.target.checked,
       value: e.target.selectedIndex + 1,
     };
-    console.log("e", e);
-    console.log("e.target", e.target);
-    console.log("e.target.value", e.target.value);
-    console.log("e.target.selectedIndex", e.target.selectedIndex);
     dispatch(updateFieldValue(data));
   };
 

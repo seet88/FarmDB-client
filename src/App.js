@@ -12,9 +12,7 @@ import LibrariesList from "./components/library/LibrariesList";
 import { useQuery } from "@apollo/client";
 import { useDispatch } from "react-redux";
 import { updateAllLibraries } from "./store/templateLibraries-slice";
-import { updateAllLibrariesRecords } from "./store/librariesRecords-slice";
 import {
-  GET_LIBRARIES_DATA,
   GET_LIBRARIES_TEMPLATES,
   GET_LIBRARIES_DATA_PG,
 } from "./API/graphQLTypes";
@@ -27,6 +25,9 @@ function App() {
     data: dataPg,
   } = useQuery(GET_LIBRARIES_DATA_PG);
   const { loading, error, data } = useQuery(GET_LIBRARIES_TEMPLATES);
+
+  console.error("GET_LIBRARIES_TEMPLATES:", error);
+  console.error("GET_LIBRARIES_DATA_PG:", errorDataPg);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -35,9 +36,7 @@ function App() {
 
   useEffect(() => {
     if (!loadingDataPg)
-      // dispatch(updateAllLibrariesRecords(dataData?.librariesData));
       dispatch(updateAllLibrariesData(dataPg?.librariesDataPG));
-    // console.log(dataPg);
   }, [loadingDataPg, dataPg, dispatch]);
 
   return (

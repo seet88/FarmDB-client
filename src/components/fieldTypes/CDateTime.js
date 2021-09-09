@@ -15,10 +15,8 @@ const CDateTime = ({ field, mode }) => {
   };
 
   if (!field?.value) return <div></div>;
-  // console.log("field?.value", field?.value);
   const date = new Date(field?.value);
   const dateString = date.toISOString().split(".")[0];
-  // console.log("dateString", dateString);
   if (mode === "view") return <div>{dateString.replace("T", " ")}</div>;
   else
     return (

@@ -6,8 +6,6 @@ import { useDispatch } from "react-redux";
 import { deleteEntryLink } from "../../store/editedEntry-slice";
 
 const LinkToEntry = ({ field, mode, columnTemplate }) => {
-  // const { libUUID, uniqueName } = entryLinks;
-  // console.log("columnTemplate in LinkToEntry", columnTemplate);
   const dispatch = useDispatch();
   const [showModal, setShowModal] = useState(false);
 
@@ -16,7 +14,6 @@ const LinkToEntry = ({ field, mode, columnTemplate }) => {
   };
 
   const deleteHandler = (e, entryIndex) => {
-    console.log("delete link handler", entryIndex);
     e.preventDefault();
     dispatch(deleteEntryLink({ columnUUID: field?.columnUUID, entryIndex }));
   };
@@ -30,13 +27,7 @@ const LinkToEntry = ({ field, mode, columnTemplate }) => {
   }, [showModal]);
 
   let libUUID;
-  // if (field?.entryLinks) libUUID = field?.entryLinks[0]?.libUUID;
-  // else
   libUUID = columnTemplate?.options[0]?.dictionaryLibraryUUID;
-  // console.log(
-  //   "columnTemplate?.options[0]?.dictionaryLibraryUUID",
-  //   columnTemplate?.options[0]?.dictionaryLibraryUUID
-  // );
   return (
     <div>
       <ul className={classes.list}>
@@ -52,7 +43,6 @@ const LinkToEntry = ({ field, mode, columnTemplate }) => {
                   mode: "view",
                 },
               }}
-              // className={classes.link}
             >
               <div className={classes.link}>
                 <div className={classes.name}>{entryLink?.rowTitle}</div>

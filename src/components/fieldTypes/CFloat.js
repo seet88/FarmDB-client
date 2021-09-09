@@ -49,8 +49,6 @@ const CFloat = ({ field, mode }) => {
           type="number"
           id={field.columnUUID}
           name={field.columnName}
-          // onBlur={inputChangeHandler}
-          // defaultValue={value}
           value={value}
           step="0.1"
           onChange={inputNumberChangeHandler}

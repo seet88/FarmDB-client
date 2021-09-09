@@ -14,7 +14,7 @@ const CCheckbox = ({ field, mode }) => {
     dispatch(updateFieldValue(data));
   };
 
-  console.log("values", field?.value);
+  // console.log("values", field?.value);
   const isDisabled = mode === "view" ? "disabled" : "";
   const isChecked = field?.value === "1" ? "checked" : "";
   return (

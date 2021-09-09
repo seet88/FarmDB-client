@@ -27,7 +27,6 @@ export const librariesDataSlice = createSlice({
 
         state.push(libTemp);
       });
-      // action.payload.map((lib) => state.push(lib));
     },
   },
 });

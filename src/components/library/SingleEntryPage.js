@@ -58,7 +58,6 @@ const setComponentByType = (column, field, mode, options) => {
         ></CDropDownList>
       );
     case "libEntry":
-      // console.log("insetComponentByType - column: ", column);
       return (
         <LinkToEntry
           mode={mode}
@@ -89,10 +88,6 @@ const SingleEntryPage = () => {
 
   const fieldsInit = columnsTemplates?.map((columnTemplate) => {
     let options = [];
-    // console.log(
-    //   "row[columnTemplate.sqlFieldName]",
-    //   row[columnTemplate.sqlFieldName]
-    // );
     if (columnTemplate?.type === "libEntry")
       options = columnTemplate?.options[0].dictionaryLibraryName;
     else if (columnTemplate?.type === "dropDownList")
@@ -117,9 +112,7 @@ const SingleEntryPage = () => {
   }, []);
 
   useEffect(() => {
-    // if (mode === "edit") {
     dispatch(updateEntryValues(fieldsInit));
-    // }
   }, [rowUUID, libUUID]);
 
   const cancelHandler = () => {
@@ -137,10 +130,6 @@ const SingleEntryPage = () => {
   };
 
   const fields = useSelector((state) => selectAllFields(state));
-
-  console.log("fields", fields);
-
-  // useEffect(() => {}, [fields]);
 
   return (
     <Fragment>

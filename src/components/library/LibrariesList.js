@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { selectLibrariesInfo } from "../../store/librariesRecords-slice";
 import classes from "./LibrariesList.module.css";
 import LibraryTile from "./LibraryTile";
 

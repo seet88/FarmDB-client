@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import EntriesList from "./EntriesList";
 import classes from "./ModalEntriesList.module.css";
 const ModalEntriesList = ({ toggleShowModal, libUUID, columnUUID }) => {
-  console.log("modal:", libUUID, "columnUUID", columnUUID);
   return (
     <Fragment>
       <div className={classes.modal}>
