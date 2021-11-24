@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/FarmDB-client/static/css/main.c9caae25.chunk.css",
+    "main.js": "/FarmDB-client/static/js/main.24e78a1e.chunk.js",
+    "main.js.map": "/FarmDB-client/static/js/main.24e78a1e.chunk.js.map",
+    "runtime-main.js": "/FarmDB-client/static/js/runtime-main.1165ef79.js",
+    "runtime-main.js.map": "/FarmDB-client/static/js/runtime-main.1165ef79.js.map",
+    "static/css/2.d565e0ea.chunk.css": "/FarmDB-client/static/css/2.d565e0ea.chunk.css",
+    "static/js/2.404e0425.chunk.js": "/FarmDB-client/static/js/2.404e0425.chunk.js",
+    "static/js/2.404e0425.chunk.js.map": "/FarmDB-client/static/js/2.404e0425.chunk.js.map",
+    "static/js/3.40dd4726.chunk.js": "/FarmDB-client/static/js/3.40dd4726.chunk.js",
+    "static/js/3.40dd4726.chunk.js.map": "/FarmDB-client/static/js/3.40dd4726.chunk.js.map",
+    "index.html": "/FarmDB-client/index.html",
+    "static/css/2.d565e0ea.chunk.css.map": "/FarmDB-client/static/css/2.d565e0ea.chunk.css.map",
+    "static/css/main.c9caae25.chunk.css.map": "/FarmDB-client/static/css/main.c9caae25.chunk.css.map",
+    "static/js/2.404e0425.chunk.js.LICENSE.txt": "/FarmDB-client/static/js/2.404e0425.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1165ef79.js",
+    "static/css/2.d565e0ea.chunk.css",
+    "static/js/2.404e0425.chunk.js",
+    "static/css/main.c9caae25.chunk.css",
+    "static/js/main.24e78a1e.chunk.js"
+  ]
+}
